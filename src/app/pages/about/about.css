@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&family=Mrs+Saint+Delafield&display=swap');
+
+.about-container {
+    background-color: #f7f7f7;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    overflow: hidden;
+}
+
+.section-subtitle {
+    color: #b58e31;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.content-body p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1a1a1a !important;
+}
+
+.image-wrapper {
+    position: relative;
+    padding: 10px;
+}
+
+.est-badge {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    background: #1a1a1a;
+    color: #b58e31;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 4px;
+    transform: rotate(-3deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.est-text {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.est-year {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.chef-signature {
+    margin-top: 2.5rem;
+}
+
+.chef-signature .title {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.chef-signature .name {
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 3.5rem;
+    color: #1a1a1a;
+    margin-top: -10px;
+}

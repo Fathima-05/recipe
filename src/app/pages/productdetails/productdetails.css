@@ -1,0 +1,30 @@
+:host {
+    display: block;
+    background-color: #fffaf5;
+    min-height: 100vh;
+}
+
+.text-gold {
+    color: #b58e31;
+}
+
+.btn-gold {
+    background-color: #1a1a1a;
+    color: #b58e31;
+    border: none;
+    border-radius: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: #b58e31;
+    color: #fff;
+}
+
+.list-group-item {
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+}

@@ -1,0 +1,28 @@
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+}
+
+.gold-subtitle, .text-gold {
+    color: #b58e31;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-dark {
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 0;
+}
+
+.btn-dark:hover {
+    background-color: #b58e31;
+}

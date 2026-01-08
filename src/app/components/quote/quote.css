@@ -1,0 +1,41 @@
+figure.text-center {
+  max-width: 800px;
+  margin: 60px auto 70px;
+}
+
+.blockquote p {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #2c2c2c;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+.blockquote p::before,
+.blockquote p::after {
+  color: #f4a261;
+  font-size: 2rem;
+  vertical-align: -0.4rem;
+}
+
+.blockquote p::before {
+  content: "“";
+  margin-right: 6px;
+}
+
+.blockquote p::after {
+  content: "”";
+  margin-left: 6px;
+}
+
+.blockquote-footer {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.blockquote-footer cite {
+  font-style: normal;
+  font-weight: 500;
+  color: #555;
+}

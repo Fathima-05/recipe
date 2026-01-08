@@ -1,0 +1,36 @@
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h6 class="gold-subtitle text-uppercase fw-bold mb-2">Our Menu</h6>
+    <h2 class="section-title">Explore Our Crafted Flavors</h2>
+    <p class="text-muted"><i>Every dish is a moment worth savoring.</i></p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    @for (i of cards; track i.id) {
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="row g-0 h-100">
+            <div class="col-md-4">
+              <img [src]="i.image" class="img-fluid rounded-start h-100 object-fit-cover" [alt]="i.name">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body d-flex flex-column h-100">
+                <h5 class="card-title fw-bold">{{i.name}}</h5>
+                <p class="card-text text-muted flex-grow-1">
+                  Experience the perfect blend of {{i.cuisine}} tradition and modern flair. 
+                  Difficulty: {{i.difficulty}}
+                </p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="text-gold fw-bold">{{i.rating}} ★</span>
+                  <button type="button" class="btn btn-dark btn-sm px-4" (click)="viewProductDetails(i)">
+                    See more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="container py-5">
+  <div class="row align-items-center bg-white shadow-sm rounded p-4">
+    <div class="col-md-6">
+      <img [src]="products.image" class="img-fluid rounded shadow" [alt]="products.name">
+    </div>
+    
+    <div class="col-md-6 ps-md-5">
+      <h6 class="text-gold text-uppercase fw-bold mb-2">{{products.cuisine}} Cuisine</h6>
+      <h2 class="display-5 fw-bold mb-3">{{products.name}}</h2>
+      
+      <div class="d-flex align-items-center mb-4">
+        <span class="badge bg-dark me-2">{{products.rating}} ★</span>
+        <span class="text-muted">({{products.reviewCount}} reviews)</span>
+      </div>
+
+      <p class="lead text-muted mb-4">
+        Experience a masterfully crafted {{products.name}}, a signature dish of Savoré. 
+        Prepared with fresh ingredients and traditional techniques.
+      </p>
+
+      <div class="row mb-4">
+        <div class="col-6">
+          <small class="text-muted d-block">Prep Time</small>
+          <strong>{{products.prepTimeMinutes}} mins</strong>
+        </div>
+        <div class="col-6">
+          <small class="text-muted d-block">Difficulty</small>
+          <strong>{{products.difficulty}}</strong>
+        </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <h4 class="fw-bold mb-3">Ingredients</h4>
+      <ul class="list-group list-group-flush">
+        @for (ingredient of products.ingredients; track ingredient) {
+          <li class="list-group-item bg-transparent border-0 ps-0">
+            <span class="text-gold me-2">✔</span> {{ingredient}}
+          </li>
+        }
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h4 class="fw-bold mb-3">Instructions</h4>
+      <ol class="list-group list-group-numbered list-group-flush">
+        @for (step of products.instructions; track step) {
+          <li class="list-group-item bg-transparent border-0">{{step}}</li>
+        }
+      </ol>
+    </div>
+  </div>
+</div>
